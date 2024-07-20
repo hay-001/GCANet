@@ -20,8 +20,6 @@ git clone https://https://github.com/hay-001/GCANet.git
 cd GCANet
 ```
 
-```
-
 ## Train
 Use the script `train_new.py` to train a model in our dataset :
 ``` bash
