@@ -1,4 +1,4 @@
-# GCANet: A Geometric Consistency-driven Aggregation Network for Robust Primitive Segmentation on Point Clouds
+# GCANet: A Geometric Consistency-driven Aggregation Network for Robust Primitive Segmentation on Point Clouds（PG2024）
 
 
 
