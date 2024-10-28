@@ -21,32 +21,13 @@ parser.add_argument('--using_set_aggr',
                     help='using_set_aggr')
 parser.add_argument('--model_dict',
                     type=str,
-                    # default='models.dgcnn-hais-concat-aff',
-                    # default='models.dgcnn-hais-concat',#our
-                    # default='models.dgcnn-hais-concat-direct-4', #-4our
-                    # default='models.dgcnn-hais-concat-cos',
-                    default='models.dgcnn-hais-concat-right-ab-inst',#our
+                    default='models.dgcnn-hais-concat-direct-4',
                     help='model file name')
 parser.add_argument('--checkpoint_path',
-                    # default=None,
-                    # default='log/dgcnn-hais-6-concat-tryagain/checkpoint_max_miou, miou:0.785,type_miou:0.904_eval27.tar',#our
-                    # default='log/dgcnn-hais-10-concat-offset20/checkpoint_max_type_miou:0.798,type_miou:0.899_eval29.tar',
-                    # default='log/dgcnn-hais-10-concat-cos/checkpoint_max_type_miou:0.804,type_miou:0.901_eval47.tar',
-                    # default='log/direction4-3/checkpoint_max_miou, miou:0.811,type_miou:0.908_eval54.tar',
-                    # default='log/direction4-2/checkpoint_max_miou, miou:0.809,type_miou:0.911_eval55.tar',#our
-                    # default='log/direction4-3/checkpoint_max_miou, miou:0.811,type_miou:0.908_eval54.tar',
-                    default='log/dgcnn-hais-6-concat-right-ab-inst/checkpoint_max_miou, miou:0.75,type_miou:0.778_eval1.tar',
+                    default=None,
                     help='Model checkpoint path [default: None]')
 parser.add_argument('--log_dir',
-                    # default='log/dgcnn-hais-6-concat-without-normal',
-                    # default='log/dgcnn-hais-6-concat-ablation-withoutoffset',
-                    # default='log/dgcnn-hais-6-concat-ablation-withoutHCA',
-                    # default='log/dgcnn-hais-6-concat-tryagain',
-                    # default='log/dgcnn-hais-6-concat-offset20',
-                    # default='log/dgcnn-hais-10-concat-offset20',
-                    # default='log/dgcnn-hais-10-concat-cos',
-                    # default='log/dgcnn-hais-6-concat-softgroup',
-                    default='log/dgcnn-hais-6-concat-right-ab-inst',
+                    default='log/gcanet',
                     help='Dump dir to save model checkpoint [default: log]')
 parser.add_argument('--resultsSave',
                     type=bool,
@@ -73,7 +54,6 @@ parser.add_argument('--train_dataset',
 parser.add_argument('--test_dataset',
                     type=str,
                     default='test_data.txt',
-                    # default='real_data.txt',
                     help='file name for the list of object names for testing')
 parser.add_argument('--batch_size', type=int, default=3)#default3,8
 parser.add_argument('--vis',
