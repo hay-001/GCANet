@@ -12,13 +12,15 @@
   
 ## Compile 
 （softgroup）
-1、sudo apt-get install libsparsehash-dev
-2、python setup.py build_ext develop
-
+``` bash
+sudo apt-get install libsparsehash-dev
+python setup.py build_ext develop
+```
 （pointnet2_ops_lib）
-1、cd /model/pointnet2_ops_lib
-2、python setup.py build_ext develop
-
+``` bash
+cd /model/pointnet2_ops_lib
+python setup.py build_ext develop
+```
 
 ## Datasets
 You can download the datasets used in HPNet (https://github.com/SimingYan/HPNet).
@@ -43,10 +45,6 @@ python train_new.py
 cd GCANet
 python train_new.py --eval
 ```
-
-
-```
-
 
 
 ## Acknowledgements
