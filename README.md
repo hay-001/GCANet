@@ -7,7 +7,18 @@
 * Python 3.8
 * PyTorch 1.9.0
 * CUDA and CuDNN (CUDA 11.1 )
-* TensorboardX (2.6) if logging training info. 
+* TensorboardX (2.6) if logging training info.
+* For other lib, please refer to requirements.txt
+  
+## Compile 
+（softgroup）
+1、sudo apt-get install libsparsehash-dev
+2、python setup.py build_ext develop
+
+（pointnet2_ops_lib）
+1、cd /model/pointnet2_ops_lib
+2、python setup.py build_ext develop
+
 
 ## Datasets
 You can download the datasets used in HPNet (https://github.com/SimingYan/HPNet).
