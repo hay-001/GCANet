@@ -35,12 +35,14 @@ cd GCANet
 
 ## Train
 Use the script `train_new.py` to train a model in our dataset :
+(set using_set_aggr= False in option_new.py, For Training efficiently)
 ``` bash
 cd GCANet
 python train_new.py
 ```
 
 ## Test
+(set using_set_aggr= True in option_new.py, For Training efficiently)
 ``` bash
 cd GCANet
 python train_new.py --eval
