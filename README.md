@@ -42,7 +42,7 @@ python train_new.py
 ```
 
 ## Test
-(set using_set_aggr= True in option_new.py, For Training efficiently)
+(set using_set_aggr= True in option_new.py)
 ``` bash
 cd GCANet
 python train_new.py --eval
